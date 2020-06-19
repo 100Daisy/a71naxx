@@ -43,3 +43,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TW_INCLUDE_CRYPTO := true
+
+# Kernel
+TARGET_KERNEL_SOURCE               := kernel/samsung/a71naxx
+TARGET_KERNEL_CONFIG               := a71naxx_defconfig
+TARGET_KERNEL_HEADER_ARCH          := arm64
