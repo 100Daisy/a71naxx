@@ -51,3 +51,4 @@ TARGET_KERNEL_HEADER_ARCH          := arm64
 BOARD_KERNEL_IMAGE_NAME            := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO        := true
 BOARD_KERNEL_CMDLINE               := console=null androidboot.hardware=qcom androidboot.memcg=1 msm_rtb.filter=0x237 lpm_levels.sleep_disabled=1  androidboot.usbcontroller=a600000.dwc3 firmware_class.path=/vendor/firmware_mnt/image androidboot.selinux=permissive
+BOARD_NAME                         := SRPSF18B001
