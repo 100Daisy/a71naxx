@@ -59,3 +59,6 @@ BOARD_KERNEL_OFFSET                := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET           := 0x01e00000
 BOARD_RAMDISK_OFFSET               := 0x02000000
 BOARD_MKBOOTIMG_ARGS     := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --header_version $(BOARD_HEADER_VERSION) --board $(BOARD_NAME)
+
+# TWRP
+TARGET_RECOVERY_FSTAB := device/samsung/a71naxx/twrp.fstab
