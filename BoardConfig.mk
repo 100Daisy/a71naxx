@@ -62,3 +62,4 @@ BOARD_MKBOOTIMG_ARGS     := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_off
 
 # TWRP
 TARGET_RECOVERY_FSTAB := device/samsung/a71naxx/twrp.fstab
+TARGET_USERIMAGES_USE_F2FS := true
