@@ -52,3 +52,10 @@ BOARD_KERNEL_IMAGE_NAME            := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO        := true
 BOARD_KERNEL_CMDLINE               := console=null androidboot.hardware=qcom androidboot.memcg=1 msm_rtb.filter=0x237 lpm_levels.sleep_disabled=1  androidboot.usbcontroller=a600000.dwc3 firmware_class.path=/vendor/firmware_mnt/image androidboot.selinux=permissive
 BOARD_NAME                         := SRPSF18B001
+BOARD_HEADER_VERSION               := 1
+BOARD_KERNEL_PAGESIZE              := 4096
+BOARD_KERNEL_BASE		    := 0x00000000
+BOARD_KERNEL_OFFSET                := 0x00008000
+BOARD_KERNEL_TAGS_OFFSET           := 0x01e00000
+BOARD_RAMDISK_OFFSET               := 0x02000000
+BOARD_MKBOOTIMG_ARGS     := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --header_version $(BOARD_HEADER_VERSION) --board $(BOARD_NAME)
