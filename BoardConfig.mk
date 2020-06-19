@@ -48,3 +48,5 @@ TW_INCLUDE_CRYPTO := true
 TARGET_KERNEL_SOURCE               := kernel/samsung/a71naxx
 TARGET_KERNEL_CONFIG               := a71naxx_defconfig
 TARGET_KERNEL_HEADER_ARCH          := arm64
+BOARD_KERNEL_IMAGE_NAME            := Image.gz-dtb
+BOARD_KERNEL_SEPARATED_DTBO        := true
