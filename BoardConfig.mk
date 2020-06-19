@@ -65,3 +65,5 @@ TARGET_RECOVERY_FSTAB := device/samsung/a71naxx/twrp.fstab
 TARGET_USERIMAGES_USE_F2FS := true
 TW_THEME := portrait_hdpi
 BOARD_SUPPRESS_SECURE_ERASE := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
